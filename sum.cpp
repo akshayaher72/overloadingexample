@@ -1,25 +1,45 @@
 #include <iostream>
 using namespace std;
-int sum(int a, int b) {
-     int c = a + b;
-         cout << " two int: " << c << endl;
+class sum{
 
-}
-int sum(int a, int b, int c) {
-    int d= a + b + c;
-        cout << " three int: " << d << endl;
+public:
 
-}
-float sum(float a, float b) {
-    float c= a + b;
-         cout << " two float: " << c << endl;
+ int a,b,c,d;
+ float e;
 
-}
+
+ sum(int a,int b){
+
+    c= a+b;
+
+    cout<< " sum of two int:" <<c << endl;
+
+ }
+
+
+  sum(int a,int b,int c){
+
+    d= a+b+c;
+
+    cout<< "sum of two int:" <<d<< endl;
+
+ }
+
+  sum(float a,float b){
+
+     e= a+b;
+
+    cout<< "sum of two int:" <<e << endl;
+
+ }
+
+};
+
 
 int main() {
-    int s1 = sum(5, 7);
-    int s2 = sum(1, 2, 3);
-    float s3 = sum(3.5f, 4.2f);
+    sum s1(5, 7);
+    sum s2(1, 2, 3);
+    sum s3(3.5f, 4.2f);
 
     return 0;
 }
